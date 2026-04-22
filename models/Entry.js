@@ -19,7 +19,7 @@ const entrySchema = new mongoose.Schema({
   // User's personal data
   status: {
     type: String,
-    enum: ['watched', 'watching', 'stopped'],
+    enum: ['watched', 'watching', 'stopped', 'watchlist'],
     required: true
   },
   stopReason: { type: String },
