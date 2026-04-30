@@ -40,6 +40,11 @@ const entrySchema = new mongoose.Schema({
   rewatchCount: { type: Number, default: 0 },
   rewatchDates: [{ type: Date }],
 
+seasonRatings: [{
+    season: { type: Number },
+    rating: { type: Number, min: 1, max: 5 }
+  }],
+
   // Series/group
   group: {
     type: mongoose.Schema.Types.ObjectId,
